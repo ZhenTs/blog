@@ -1,4 +1,46 @@
-baseURL = 'http://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
-theme = "ananke"
+baseURL = 'https://zhents.github.io/'
+languageCode = 'zh'
+title = 'ZhenTs'
+theme = "gokarna"
+defaultContentLanguage = 'zh'
+defaultContentLanguageInSubdir = true
+
+[params]
+  avatarURL = "../images/icon.png"
+  description = "Stay Foolish Stay Hungry"
+  togglePreviousAndNextButtons = "true"
+  footer = "ZhenTs"
+  socialIcons = [
+      {name = "github", url = "https://zhents.github.com"},
+    ]
+[menu]
+  [[menu.main]]
+    name = "Home"
+    pre = "<span data-feather='home'></span>"
+    url = "/"
+    weight = 1
+
+  [[menu.main]]
+    name = "Posts"
+    pre = "<span data-feather='book'></span>"
+    url = "/posts/"
+    weight = 2
+
+  # [[menu.main]]
+  #   name = "Projects"
+  #   pre = "<span data-feather='code'></span>"
+  #   url = "/projects/"
+  #   weight = 3
+
+  [[menu.main]]
+    name = "Tags"
+    pre = "<span data-feather='tag'></span>"
+    url = "/tags/"
+    weight = 4
+    
+  # [[menu.main]]
+  #   identifier = "github"
+  #   url = "https://zhents.github.com"
+  #   weight = 5
+  #   # We use feather-icons: https://feathericons.com/
+  #   pre = "<span data-feather='github'></span>"
